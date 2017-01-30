@@ -1,0 +1,112 @@
+<html ng-app="TheCard">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+      
+      
+<style type="text/css">
+.section-title {
+text-align:center;
+margin-top: 0em;
+background-color: #ecf0f1;
+padding: .5em 0;
+border-radius: .3em;
+}
+.service {
+border-radius: .3em;
+background-color: #34495e;
+text-align: center;
+padding: 3em 2em 1em 2em;
+color: white;
+}
+.service .glyphicon {
+font-size: 5em;
+}
+</style>
+      
+      
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+<div class="container-fluid" ng-controller="navigationController">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
+        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" ui-sref="main">theCard</a>
+    </div>
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+<ul class="nav navbar-nav navbar-right" ng-show="!loggedIn">
+    <li><a ui-sref="login">signin</a></li>
+    <li><a ui-sref="register">register</a></li></ul>
+<ul class="nav navbar-nav navbar-right" ng-show="loggedIn">
+    <li><a ui-sref="profile">profile</a></li>
+    <li><a ng-click="logout()">logout</a></li></ul>
+    
+    </div>
+            </div>
+            </nav><hr><br>
+ <div class="container">       
+<div ng-controller="sidenav">
+<div class="col-md-4" ng-show="okaymove">
+    
+  
+<ul class="nav navbar-pills navbar-stacked navbar-fixed">
+<li ng-show="hidecv"><a ui-sref="cvmaker">View CV in Full</a></li>
+<li ng-show="!hidecv"><a ui-sref="cvmaker">Create CV</a></li>
+<li ng-show="!showad"><a ui-sref="ads">create business catalogue</a></li>
+<li ng-show="showad"><a ui-sref="ads">View Catalogue in full</a></li>
+    <li><a ui-sref="hire">Find employes</a></li>
+    <li><a ui-sref="music">Sell your music</a></li>
+    <li ng-show="rice"><a ui-sref="community">Check out your communities in Full</a></li>
+    <li ng-show="!rice"><a ui-sref="community">join or create a community</a></li>
+        </ul>
+    </div>
+    </div>
+        
+        
+        
+      <div ui-view></div>
+     
+        </div>
+    </body>
+    
+     <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+    
+    <script src="thecard/router.js"></script>
+    
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <!--controllers -->
+    <script src="thecard/ads/ads-Controller.js"></script>
+    <script src="thecard/authentication/login-controller.js"></script>
+    <script src="thecard/authentication/navigation-controller.js"></script>
+    <script src="thecard/cvs/cvs-controller.js"></script>
+    <script src="thecard/dashboard/dashboard-controller.js"></script>
+    <script src="thecard/hire/hire-controller.js"></script>
+    <script src="thecard/main/main-controller.js"></script>
+    <script src="thecard/music/music-controller.js"></script>
+    <script src="thecard/profile/profile-controller.js"></script>
+    <script src="thecard/register/register-controller.js"></script>
+    <script src="thecard/cvs/cv-plantcontroller.js"></script>
+    <script src="thecard/ads/ads-Controller.js"></script>
+    <script src="thecard/ads/addproducts-controller.js"></script>
+    <script src="thecard/community/community-controller.js"></script>
+    
+    <!--libraries -->
+<script src="node_modules/ng-file-upload/dist/ng-file-upload.js"></script>
+<script src="node_modules/ng-file-upload/dist/ng-file-upload-all.js"></script>
+<script src="node_modules/ng-file-upload/dist/ng-file-upload-shim.js"></script>
+   
+    
+    
+</html>

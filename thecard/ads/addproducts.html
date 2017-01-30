@@ -1,0 +1,48 @@
+<div class="col-md-8">
+    <div class="col-sm-4 col-md-6" style="border-style: dotted; border-color: #ff0000" ng-show="!rightmove">
+         <div class="btn" ngf-select ng-model="file" name="file"  ngf-pattern="'image/*'"
+    ngf-accept="'image/*'" ngf-max-size="20MB" ngf-min-height="100"
+    ngf-resize="{width: 100, height: 100}">Select image</div>
+        <p ng-show="file"><img class="thumbnail" width=100 height="100" ng-src="{{picshow}}" /></p>
+        <input type="text" class="form-control" ng-model="product.name" placeholder="product name" />
+        <input type="number" class="form-control" ng-model="product.size" placeholder="product size" />
+        <input type="text" class="form-control" ng-model="product.price" placeholder="price" />
+        <input type="text" class="form-control" ng-model="product.instock" placeholder="quntity" />
+        <textarea type="text" class="form-control" ng-model="product.description" placeholder="product description"></textarea>
+        <button type="button" ng-click="productSave()" class="btn btn-primary btn-lg">save</button>
+        
+        </div>
+    <div class="col-sm-4 col-md-6" style="border-style: dotted; border-color: #ff0000" >
+        <img  class="img-thumbnail" alt=" click here..upload Product image..100px by 100px" width="100" height="100">
+        <input type="text" class="form-control" placeholder="product name" />
+        <input type="number" class="form-control" placeholder="product size" />
+        <input type="text" class="form-control" placeholder="price" />
+        <input type="text" class="form-control" placeholder="quntity" />
+        <textarea type="text" class="form-control" placeholder="product description"></textarea>
+        <button type="button" class="btn btn-primary btn-lg">save</button>
+        
+        </div>
+    <div class="col-sm-4 col-md-6" style="border-style: dotted; border-color: #ff0000;">
+        <img  class="img-thumbnail" alt=" click here..upload Product image..100px by 100px" width="100" height="100">
+        
+        
+        
+        <input type="text" class="form-control" placeholder="product name" />
+        <input type="number" class="form-control" placeholder="product size" />
+        <input type="text" class="form-control" placeholder="price" />
+        <input type="text" class="form-control" placeholder="quntity" />
+        <textarea type="text" class="form-control" placeholder="product description"></textarea>
+        <button type="button" class="btn btn-primary btn-lg">save</button>
+        
+        </div>
+    <div class="col-sm-4 col-md-6" style="border-style: dotted; border-color: #ff0000">
+        <img  class="img-thumbnail" alt=" click here..upload Product image..100px by 100px" width="100" height="100">
+        <input type="text" class="form-control" placeholder="product name" />
+        <input type="number" class="form-control" placeholder="product size" />
+        <input type="text" class="form-control" placeholder="price" />
+        <input type="text" class="form-control" placeholder="quntity" />
+        <textarea type="text" class="form-control" placeholder="product description"></textarea>
+        <button type="button" class="btn btn-primary btn-lg">save</button>
+        
+        </div>
+  </div>

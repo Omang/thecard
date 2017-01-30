@@ -1,0 +1,28 @@
+ <div class="col-md-8">
+     <div class="col-md-4">
+         <h3>Basic info</h3>
+     <label>Firstname</label>
+ <input class="form-control" ng-model="fname" type="text" />
+ <label>Lastname</label>
+ <input class="form-control" ng-model="lname" type="text" />
+    <label>Residential Address</label>
+    <input class="form-control" ng-model="resadd" type="text"/>
+    <label>current location</label>
+    <input class="form-control" ng-model="location" type="text" />
+    <label>Email</label>
+ <input class="form-control" ng-model="email" type="text" />
+     </div>
+     <div class="col-md-4">
+         <h3>Skills</h3>
+     <label>proffesion</label>
+ <input class="form-control" type="text" ng-model="skill" />
+    <label>experince</label>
+    <textarea class="form-control" ng-model="experince"></textarea>
+    <label>Current Work</label>
+    <textarea class="form-control" ng-model="work"></textarea>
+    <label>Hobbies</label>
+         <textarea class="form-control" ng-model="hobbies" type="text"></textarea>
+         <button ng-click="createCv()" class="btn btn-primary btn-medium" type="button">ok</button>
+         <button ng-click="reset()" class="btn btn-warning btn-medium" type="button">reset</button>
+     </div>
+    </div>

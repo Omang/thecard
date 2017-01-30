@@ -1,0 +1,12 @@
+<div class="col-md-6 col=sm=12">
+  <h4 class="text-center">upload music</h4>
+    <h6>upload a single track</h6>
+    <br><br>
+    <p class="text-center"><button class="btn btn-primary text-center" ngf-select ng-model="track" name="file"  ngf-pattern="'audio/*'"
+    ngf-accept="'audio/*'" ngf-max-size="20MB" ngf-min-size="1MB"
+     ngf-min-duration="20s" ngf-max-duration="10m"
+       ngf-validate="{size: {min: 10MB, max: '20MB'},
+        duration: {min: '20s', max: '10m'}, pattern: 'audio/*'}">Select track</button>....upload here</p><br><br><br>
+    <p class="text-center"><button class="btn btn-primary"
+                                   ng-click="uploadTrack()">upload</button>....and press </p>
+    </div>

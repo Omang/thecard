@@ -1,0 +1,74 @@
+ <div ng-show="!okaystuff">
+<h2 class="section-title"><strong>Connect to Music and peoples CVs and hires</strong></h2>
+<div class="row">
+    <div class="col-md-4 col-sm-4" style="margin-top:5px;">
+    <div class="service">
+<span class="glyphicon glyphicon-music" aria-hidden="true"></span>
+<h3><strong>music</strong></h3>
+Are you a Singer..create your music card and upload your music, let your
+music reach your fans. If you a listerner..create an account 
+and listern,download and follow artists.
+    </div >
+    </div >
+        <div class="col-md-4 col-sm-4" style="margin-top:5px;" >
+        <div class="service">
+<span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+<h3><strong>CVs</strong></h3>
+Are you looking for a job, been bored by your cuurent job..
+create an account and upload your CV and share with procurements
+our there. no need to literally drop your CV by hand.
+        </div >
+       </div >
+           <div class="col-md-4 col-sm-4" style="margin-top:5px;">
+           <div class="service">
+<span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+<h3><strong>Hire</strong></h3>
+Tired of hiring people after money but cant deliver..
+create an account and join the world of experts.
+Post jobs to the relavant targeted experticy
+Easy to invent people to your jobs. 
+           </div >
+           </div >
+    </div>
+        </div>
+<div class="col-md-8" ng-show="okaystuff">
+<div class="col-md-6 col-sm-12" ng-show="fname && okaystuff" style="border: dotted; border-color:blue; margin:1px; padding:1px;" >
+    <h2 class="text-center" style="border-bottom: dotted; border-color: blue; padding: 0px;">your cv</h2>
+      <h3 class="text-center" style="border-bottom: dotted; border-color: blue;">your basic infor</h3>
+      <h5 style="margin-top: 1px;">firstname: {{fname}}</h5>
+      <h5 style="margin-top: 1px;">email: {{email}}</h5>
+       <h3 class="text-center" style="border-bottom: dotted; border-color: blue">Education</h3>
+       <h5>skill: {{skill}}</h5>
+    </div>
+
+
+
+<div class="col-md-6 col-sm-12" ng-show="products && okaystuff" style="border: dotted; border-color:blue; margin:5px; padding: 1px;" >
+    <h2 class="text-center" style="border-bottom: dotted; border-color: blue;">your product catalogue</h2>
+     <p class="text-right"><img class="thumbnail" ng-src="{{productpic}}" /></p>
+       <h4>{{productname}}</h4>
+      
+   
+     <p class="text-right"><img class="thumbnail" ng-src="{{productpic}}" /></p>
+       <h4>{{productname}}</h4>
+</div>
+
+<div class="col-md-6 col-sm-12" ng-show="Cman && okaystuff" style="border: dotted; border-color:blue; margin:1px;"  >
+    <h4 class="text-center"><img class="thumbnail" ng-src="{{Cimage}}" /></h4>
+    <h6>{{Cname}}</h6>
+    <p>{{Ccontent}}</p>
+    <h5 class="text-right">Created on:{{datedate}} : {{datemonth}} : {{datayear}}</h5>
+</div>
+<div class="col-md-6 col-sm-12" ng-show="Cman && okaystuff" style="border: dotted; border-color:blue; margin:1px;"  >
+<audio autoplay="autoplay"preload="auto">
+    <source ng-src="{{track}}" type="audio/mp3" />
+    </audio>
+        <buttom class="btn btn-primary btn-sm" ng-click="audioplay()" >play</buttom>
+    <buttom class="btn btn-primary btn-sm" ng-click="audiopause()" >pause</buttom>
+</div>
+</div>
+<div class="col-md-12">
+<div class="row" style="text-align: center; padding: 1em; margin: 1em 0; background-color  -:#ecf0f1;">
+All Rights Reserved Â©. NextConcept Lab 2017.
+</div >
+</div>
